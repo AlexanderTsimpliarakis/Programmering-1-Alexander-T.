@@ -1,6 +1,6 @@
 package variabkeridentifierare;
 
-public class IntegerAbsolute {
+public class IntegerDivision {
 
 	public static void main(String[] args) {
 		

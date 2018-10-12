@@ -7,6 +7,8 @@ public class DoubleNumber {
 		int integerNumber = 10;
 		
 		boolean equal = doubleNumber == integerNumber;
+		
+		
 		System.out.println(equal);
 		System.out.println(doubleNumber != integerNumber);
 		
