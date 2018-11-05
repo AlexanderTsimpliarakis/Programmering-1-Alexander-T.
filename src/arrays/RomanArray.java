@@ -37,6 +37,6 @@ public class RomanArray {
 		}
 		System.out.println("Sum = " + sum);
 		
+		}
 	}
-
 }
