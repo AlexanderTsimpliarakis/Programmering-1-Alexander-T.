@@ -13,30 +13,30 @@ public class RomanArray {
 		Scanner scanner = new Scanner(System.in);
 		
 		while (true) {
-			int sum = 0;
-			System.out.println("Enter a roman number");
+			int sum = 0; 
+			System.out.println("Enter a roman number:");
 			String input = scanner.nextLine();
 			char[] inputCharArray = input.toCharArray();
-		
-		System.out.println(inputCharArray);
-		
-		if (input.equalsIgnoreCase("quit")) {
-			System.out.println("Exiting program");
-			System.exit(0);
-		}
-		
-		for (int i = 0; i < inputCharArray.length; i++){
-			//System.out.println(inputCharArray[i]);
-			for (int j = 0; j < romNumbers.length; j++){
-				//System.out.println(romNumbers[j] + ": i = " + i + " :j = " + j);
-				if (inputCharArray[i] == romNumbers[j]) {
-					//System.out.println("True");
-					sum += valRomNumbers[j];
+			
+			if (input.equalsIgnoreCase("quit")) {
+				System.out.println("Exiting program!");
+				System.exit(0);
+			}
+			
+			
+			for (int i = 0; i < inputCharArray.length; i++) {
+				//System.out.println(inputCharArray[i] + ":i = " + i);
+				for (int j = 0; j < romNumbers.length; j++) {
+					//System.out.println(romNumbers[j] + ": i = " + i + " :j = " + j);
+					if (inputCharArray[i] == romNumbers[j]) {
+						//System.out.println("True");
+						sum += valRomNumbers[j];
+					}
 				}
 			}
-		}
-		System.out.println("Sum = " + sum);
 		
+			System.out.println("Sum = " + sum);
 		}
 	}
+
 }
