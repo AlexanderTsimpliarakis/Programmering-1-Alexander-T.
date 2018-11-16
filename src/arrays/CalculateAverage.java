@@ -15,9 +15,12 @@ public class CalculateAverage {
 		numericArray[4] = 31;
 		numericArray[5] = 22;
 		
+		//i är antal arrays som finns
 		for(int i = 0; i < numericArray.length; i++) {
+			// sum får summan i varje array
 			sum += numericArray[i];
 		}
+		//Här delas sum på antal arrays som finns, vilket ger oss medelvärdet
 		System.out.println((double)sum / numericArray.length);		
 
 	}
