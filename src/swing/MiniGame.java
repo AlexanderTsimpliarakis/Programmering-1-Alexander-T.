@@ -8,11 +8,11 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class Main extends JFrame {
+public class MiniGame extends JFrame {
 	private JLabel text;
 	private Toolkit toolkit = Toolkit.getDefaultToolkit();
 
-	public Main() {
+	public MiniGame() {
 
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		// Första talet är width och andra är height
@@ -30,24 +30,22 @@ public class Main extends JFrame {
 		JButton closeButton = new JButton("Close");
 		closeButton.setBounds(toolkit.getScreenSize().width - 100, 0, 100, 50);
 		// första är röd, andra är grön och sista är blå
-		closeButton.setBackground(new Color(255, 255, 255));
-		closeButton.setForeground(Color.red);
+		closeButton.setBackground(new Color(0, 0, 0));
+		closeButton.setForeground(Color.white);
 		closeButton.addActionListener(event -> closeButtonPressed());
 		contentPane.add(closeButton);
 
-		text = new JLabel("Goddagens");
-		text.setBounds(50, 250, 100, 50);
-		text.setForeground(Color.DARK_GRAY);
+		text = new JLabel("yo");
+		text.setBounds(50, 250, toolkit.getScreenSize().width - 50, 50);
+		text.setForeground(Color.white);
 		contentPane.add(text);
 
-		// Det blev något fel här
-
-		JButton changeTextButton = new JButton("Change text on label");
+		JButton changeTextButton = new JButton("Start");
 		{
 			changeTextButton.setBounds(50, 50, 100, 50);
 			// första är röd, andra är grön och sista är blå
-			changeTextButton.setBackground(new Color(255, 255, 255));
-			changeTextButton.setForeground(Color.red);
+			changeTextButton.setBackground(new Color(0, 0, 0));
+			changeTextButton.setForeground(Color.white);
 			changeTextButton.addActionListener(event -> changeTextButtonPressed());
 			contentPane.add(changeTextButton);
 
@@ -55,11 +53,12 @@ public class Main extends JFrame {
 	}
 
 	public void changeTextButtonPressed() {
-		String currenText = text.getText();
-		if (text.getText().equalsIgnoreCase("Goddagens"))
-			text.setText("Adjö");
+		// String currenText = text.getText();
+		if (text.getText().equalsIgnoreCase("yo"))
+			text.setText(
+					"Welcome to my first game. This is a pokemon rip-off game not for publishing because I don't want to be copyright claimed.");
 		else
-			text.setText("Goddagens");
+			text.getText().equalsIgnoreCase("yo");
 	}
 
 	public void closeButtonPressed() {
@@ -68,7 +67,7 @@ public class Main extends JFrame {
 
 	public static void main(String[] args) {
 
-		Main frame = new Main();
+		MiniGame frame = new MiniGame();
 		// frame.addButtons(contentPane);
 	}
 
