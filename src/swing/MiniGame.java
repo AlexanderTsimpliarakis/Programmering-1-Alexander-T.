@@ -40,7 +40,7 @@ public class MiniGame extends JFrame {
 		text.setForeground(Color.white);
 		contentPane.add(text);
 
-		JButton changeTextButton = new JButton("Start");
+		JButton changeTextButton = new JButton("Start uiewfiuewgigewigfeiuh");
 		{
 			changeTextButton.setBounds(50, 50, 100, 50);
 			// första är röd, andra är grön och sista är blå
@@ -57,8 +57,6 @@ public class MiniGame extends JFrame {
 		if (text.getText().equalsIgnoreCase("yo"))
 			text.setText(
 					"Welcome to my first game. This is a pokemon rip-off game not for publishing because I don't want to be copyright claimed.");
-		else
-			text.getText().equalsIgnoreCase("yo");
 	}
 
 	public void closeButtonPressed() {
