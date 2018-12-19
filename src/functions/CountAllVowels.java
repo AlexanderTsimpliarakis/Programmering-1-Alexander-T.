@@ -2,11 +2,16 @@ package functions;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author alexander.tsimpliar
+ *
+ */
 public class CountAllVowels {
 
 	/**
 	 * 
-	 * Hittar alla vokaler i strängen.
+	 * Funktionen beräknar alla vokaler i det man skriver in i konsolen.
 	 */
 	public static void main(String[] args) {
 		countVowels(input());
